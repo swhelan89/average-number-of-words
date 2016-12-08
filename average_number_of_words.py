@@ -5,7 +5,7 @@ class AvgNumWords(object):
       sen = f1.readlines()
       list_a = map(lambda s: self.advanced_strip(s.strip()), sen)
       avg_it = self.average_len(list_a)
-      print avg_it
+      print str(round(avg_it))[:-2]
 
   def advanced_strip(self, line_space):
     return line_space.strip(", ")
